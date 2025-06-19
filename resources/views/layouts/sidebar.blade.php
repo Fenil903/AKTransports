@@ -84,6 +84,20 @@
                             </a>
                         </li>
                         @endif
+
+                        <li class="nav-item">
+                            <a href="{{ route('inventory.warehouses.index') }}" class="nav-link {{ $isActive('inventory.warehouses.index') }}">
+                                <i class="fas fa-box nav-icon"></i>
+                                <p>Warehouses</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ route('inventory.stock-imports.index') }}" class="nav-link {{ $isActive('inventory.stock-imports.index') }}">
+                                <i class="fas fa-exchange-alt nav-icon"></i>
+                                <p>Stock Imports</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 @endif
